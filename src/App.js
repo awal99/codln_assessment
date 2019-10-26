@@ -1,26 +1,41 @@
 import React from 'react';
-import logo from './logo.svg';
+import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
+import firebaseConfig from "./utils/firebase";
+import Login from "./Pages/Login.jsx"
+import HomePage from "./Pages/HomePage.jsx";
 import './App.css';
 
-function App() {
-  return (
+import withFirebaseAuth from 'react-with-firebase-auth'
+import * as firebase from 'firebase/app';
+import 'firebase/auth';
+
+const firebaseApp = firebase.initializeApp(firebaseConfig);
+
+function App(props){
+ 
+   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+      <Switch>
+        <Route exact path="/" render={props => <Login {...props}/>} />
+        <Route path="/home" render={props => <HomePage {...props}/>} />
+
+      </Switch>
+      </BrowserRouter>
+      
     </div>
   );
 }
 
-export default App;
+const firebaseAppAuth = firebaseApp.auth();
+
+const providers = {
+  facebookProvider: new firebase.auth.FacebookAuthProvider(),
+};
+
+
+export default withFirebaseAuth({
+  providers,
+  firebaseAppAuth,
+})(App);
+
