@@ -70,9 +70,8 @@ body > #root > div {
   font-size: 40px;
 }
 
-.button{
+.fb-login-button{
   color:#fff;
-  width: 60%;
   height:40px;
   border:0px;
   align-self: center;
@@ -90,6 +89,7 @@ body > #root > div {
   top:0px;
   background-color:#F7EF99;
   width:25%;
+  position: fixed;
   padding-left: 0;
   justify-content: left !important;
   padding-top: 50px;
@@ -129,6 +129,17 @@ body > #root > div {
   background-color: brown;
   padding:10px;
 }
+
+.active{
+  color:#fff;
+  background-color: brown;
+  padding:10px;
+}
+
+.active a{
+  color: #fff !important;
+}
+
 .navlist li a:hover{
   color: #fff;
 }
@@ -148,4 +159,53 @@ body > #root > div {
   font-weight: bold;
   font-size: 16px;
   color:brown
+}
+
+.right{
+  margin-left: 25%;
+  display: flexbox;
+  position: relative;
+  margin-right: 20px;
+  height: 100vh !important;
+  padding:30px;
+}
+.new-game-button{
+  background-color: brown;
+  color: #fff;
+  position: absolute;
+  border-radius: 15px;
+  font-family: cursive;
+  font-style: italic;
+  font-weight: bold;
+  height: 30px;
+  width:150px;
+  right: 0px;
+}
+
+
+.top-title{
+  font-family: cursive;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 20px;
+  color:brown;
+  left:0px;
+  margin-top:100px;
+  text-align: left;
+}
+
+.opened-games{
+  background-color: brown;
+  border-radius: 10px;
+  padding:15px;
+}
+
+.join-button{
+  color:brown;
+  background-color:#F7EF99;
+  border-radius: 15px;
+  font-family: cursive;
+  font-style: italic;
+  font-weight: bold;
+  width:50px
 }

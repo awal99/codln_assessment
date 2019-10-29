@@ -8555,6 +8555,11 @@ react-error-overlay@^6.0.3:
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-6.0.3.tgz#c378c4b0a21e88b2e159a3e62b2f531fd63bf60d"
   integrity sha512-bOUvMWFQVk5oz8Ded9Xb7WVdEi3QGLC8tH7HmYP0Fdp4Bn3qw0tRFmr5TW6mvahzvmrK4a6bqWGfCevBflP+Xw==
 
+react-facebook-login@^4.1.1:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/react-facebook-login/-/react-facebook-login-4.1.1.tgz#005121236a6ac0dee02099976fb1a3265f9d633e"
+  integrity sha512-COnHEHlYGTKipz4963safFAK9PaNTcCiXfPXMS/yxo8El+/AJL5ye8kMJf23lKSSGGPgqFQuInskIHVqGqTvSw==
+
 react-is@^16.6.0, react-is@^16.7.0:
   version "16.11.0"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.11.0.tgz#b85dfecd48ad1ce469ff558a882ca8e8313928fa"
@@ -8654,11 +8659,6 @@ react-scripts@3.2.0:
     workbox-webpack-plugin "4.3.1"
   optionalDependencies:
     fsevents "2.0.7"
-
-react-with-firebase-auth@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/react-with-firebase-auth/-/react-with-firebase-auth-1.1.0.tgz#26f39202511fbd27bd99aeed45cbb20deb87a93c"
-  integrity sha512-CqtiDKop/4z3nJQdeuW7s+/d4/0P+fmloTNnd8OAFHvQ1ea9R42r2AH84MNbGts96kquciqEbniyS4cC0SEk3A==
 
 react@^16.11.0:
   version "16.11.0"
