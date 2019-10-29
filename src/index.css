@@ -69,6 +69,12 @@ body > #root > div {
   font-weight: bold;
   font-size: 40px;
 }
+/* .ylw-title2{
+  color:;
+  font-family: cursive;
+  font-weight: bold;
+  font-size: 40px;
+} */
 
 .normalText{
   color:brown;
@@ -160,13 +166,22 @@ body > #root > div {
   color:brown;
   font-weight: bold;
   font-size: 20px;
-  color:brown
 }
 .userinfo .points{
   color:brown;
   font-weight: bold;
   font-size: 16px;
-  color:brown
+}
+
+.userinfo .name2{
+  color:#F7EF99;
+  font-weight: bold;
+  font-size: 20px;
+}
+.userinfo .points2{
+  color:#F7EF99;
+  font-weight: bold;
+  font-size: 16px;
 }
 
 .right{
@@ -177,6 +192,42 @@ body > #root > div {
   height: 100vh !important;
   padding:30px;
 }
+
+.center{
+
+  justify-content: center;
+  align-items: center;
+  background-color:brown;
+  height: 100vh !important;
+  padding:30px;
+  display: flexbox;
+}
+
+.sm-left{
+  top:0px;
+  background-color:brown;
+  width:25%;
+  position: fixed;
+  padding-left: 0;
+  justify-content: left !important;
+  padding-top: 50px;
+  border-right-color:#000;
+  height: 100vh !important;
+}
+.sm-right{
+  top:0px;
+  background-color:#F7EF99;
+  width:25%;
+  position: fixed;
+  right:0px;
+  padding-left: 0;
+  background-color: brown;
+  justify-content: right !important;
+  padding-top: 50px;
+  border-right-color:#000;
+  height: 100vh !important;
+}
+
 .new-game-button{
   background-color: brown;
   color: #fff;

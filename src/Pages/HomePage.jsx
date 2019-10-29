@@ -17,7 +17,7 @@ const HomePage=(props)=>{
    return(
        <div >
            <div className="leftnav">
-               <LeftNav/>
+               <LeftNav color="yellow"/>
            </div>
            <div className="right">
                 <div className="new-game-button" onClick={newGame}>New Game</div>

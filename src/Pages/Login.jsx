@@ -6,6 +6,16 @@ const fb = require("../assets/fb.png");
 
 const Login=(props)=>{
 
+    React.useEffect(()=>{
+        firebase.auth().onAuthStateChanged((user)=>{
+            if(user){
+                window.location.href = "/home";
+            }else{
+
+            }
+        })
+    },[])
+
    const responseFacebook = (response) => {
     //console.log(response);
         if(response != null){

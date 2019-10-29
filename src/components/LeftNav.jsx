@@ -1,7 +1,7 @@
 import React from "react";
 import {getUserInfo,getPoints} from "../modules/data.module";
 
-const LeftNav=()=>{
+const LeftNav=(props)=>{
     
     const [userInfo,setUserInfo] = React.useState(null);
     const [points,setPoints] = React.useState(0);
@@ -18,11 +18,11 @@ const LeftNav=()=>{
   
     return(
         <>
-        <div className="title2">X & Os</div>
+        <div className={props.color==="yellow"?"title2":"title"}>X & Os</div>
         <img src={userInfo != null ? userInfo.picture.data.url:'loading ...'} alt="loading user pic" width="150px" height="150px" style={{borderRadius:"50%"}} />
         <div className="userinfo">
-            <div className="name">{userInfo != null?userInfo.name:"loading ..."}</div>
-            <div className="points">{points} Points</div>
+            <div className={props.color==="yellow"?"name":"name2"}>{userInfo != null?userInfo.name:"loading ..."}</div>
+            <div className={props.color==="yellow"?"points":"points2"}>{points} Points</div>
             </div>
             <ul className="navlist">
                 <li className="active"><a href="/home">Games</a></li>
