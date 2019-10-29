@@ -46,6 +46,14 @@ const HomePage=(props)=>{
                 <OpenedUser url={opened} />
                   
                 </div>
+                {/* my games */}
+                <div className="bottom-title">My Games</div>
+                <div className="my-games">
+                    <OpenedUser url={opened} type="vs" name="Me"/>
+                    <i className="vs">vs</i>
+                    <OpenedUser url={opened} type="vs" name="Jade"/>
+                  
+                </div>
            </div>
        </div>
    )

@@ -183,23 +183,36 @@ body > #root > div {
 }
 
 
-.top-title{
+.top-title,.bottom-title{
   font-family: cursive;
   font-style: italic;
   font-weight: bold;
   font-size: 20px;
   color:brown;
   left:0px;
-  margin-top:100px;
   text-align: left;
 }
 
-.opened-games{
+.top-title{
+  margin-top:100px;
+  margin-bottom: 30px;
+}
+
+.bottom-title{
+  margin-top:30px;
+  margin-bottom:30px;
+}
+
+.opened-games,.my-games{
   background-color: brown;
   border-radius: 10px;
   padding:15px;
   display: flex;
   clear: right;
+}
+
+.my-games{
+  background-color: #F7EF99;
 }
 
 .join-button{
@@ -219,4 +232,23 @@ body > #root > div {
   justify-content: center;
   align-items: center;
   height: 130px;
+}
+
+.uname{
+  color:brown;
+  margin-left: 35%;
+  margin-top:10px;
+  font-family: cursive;
+  font-style: italic;
+  font-weight: bold;
+  width:60px
+}
+
+.vs{
+  margin-top:20px;
+  color:brown;
+  font-size: 25px;
+  font-family: cursive;
+  font-style: italic;
+  font-weight: bold;
 }
