@@ -21,6 +21,10 @@ const HomePage=(props)=>{
       })
     },[])
 
+    const newGame=()=>{
+        window.location.href = '/new';
+    }
+
    return(
        <div >
            <div className="leftnav">
@@ -37,7 +41,7 @@ const HomePage=(props)=>{
                
            </div>
            <div className="right">
-                <div className="new-game-button">New Game</div>
+                <div className="new-game-button" onClick={newGame}>New Game</div>
                 <div className="top-title">Opened Games</div>
                 {/* top card list of opened games*/}
                 <div className="opened-games">
@@ -52,7 +56,10 @@ const HomePage=(props)=>{
                     <OpenedUser url={opened} type="vs" name="Me"/>
                     <i className="vs">vs</i>
                     <OpenedUser url={opened} type="vs" name="Jade"/>
-                  
+                    <div style={{justifyContent:'center',alignItems:'center'}}>
+                        <i className="normalText">Jade has played, and its your turn</i>
+                        <div className="buttonContainer"><div className="play-button" href="#" >play</div></div>
+                    </div>
                 </div>
            </div>
        </div>

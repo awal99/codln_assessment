@@ -70,6 +70,13 @@ body > #root > div {
   font-size: 40px;
 }
 
+.normalText{
+  color:brown;
+  font-family: cursive;
+  font-weight: bold;
+  font-size: 20px;
+}
+
 .fb-login-button{
   color:#fff;
   height:40px;
@@ -81,7 +88,8 @@ body > #root > div {
 .buttonContainer{
   height:40px;
   display: flex;
-  margin-top:20px;
+  margin-top:10px;
+  cursor: pointer;
   justify-content: center;
 }
 
@@ -177,10 +185,32 @@ body > #root > div {
   font-family: cursive;
   font-style: italic;
   font-weight: bold;
+  cursor: pointer;
   height: 30px;
   width:150px;
   right: 0px;
 }
+
+/* 
+.button-container{
+  width: 100%;
+  display:flex;
+  justify-content: center;
+} */
+
+.play-button{
+  background-color: brown;
+  color: #fff;
+  border-radius: 15px;
+  font-family: cursive;
+  font-style: italic;
+  font-weight: bold;
+  height: 30px;
+  width:100px;
+  align-self: center;
+  text-decoration:none !important ;
+}
+
 
 
 .top-title,.bottom-title{
@@ -216,15 +246,18 @@ body > #root > div {
 }
 
 .join-button{
-  color:brown;
   background-color:#F7EF99;
-  margin-left: 35%;
-  margin-top:10px;
-  border-radius: 15px;
+  color: brown;
+  position: absolute;
+  border-radius: 7px;
   font-family: cursive;
   font-style: italic;
   font-weight: bold;
-  width:60px
+  display: flex;
+  justify-content: center;
+  height: 25px;
+  width:100px;
+  text-decoration:none !important ;
 }
 
 .openeduser{
