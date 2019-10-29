@@ -9,7 +9,7 @@ const HomePage=(props)=>{
 
     const [userInfo,setUserInfo] = React.useState(null);
     const [points,setPoints] = React.useState(0);
-    const [opened,setOpened] = React.useState(null)
+    const [opened,setOpened] = React.useState("https://platform-lookaside.fbsbx.com/platform/profilepic/?asid=1220441804809213&height=50&width=50&ext=1574886095&hash=AeRrkJrcaL2XO8rb")
 
     React.useEffect(()=>{
       getUserInfo(function(data){
@@ -40,13 +40,11 @@ const HomePage=(props)=>{
                 <div className="new-game-button">New Game</div>
                 <div className="top-title">Opened Games</div>
                 {/* top card list of opened games*/}
-                <div className="opened-games" style={{flexDirection:'row'}}>
+                <div className="opened-games">
                 <OpenedUser url={opened} />
                 <OpenedUser url={opened} />
                 <OpenedUser url={opened} />
-                    {/* {opened != null ? opened.map((data,index)=>{
-                        <OpenedUser url={data.url} />
-                    }):null} */}
+                  
                 </div>
            </div>
        </div>
