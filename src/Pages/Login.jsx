@@ -1,6 +1,7 @@
 import React from "react";
 import FacebookLogin from 'react-facebook-login';
 import firebase from '../utils/firebase';
+import {FACEBOOK_APP_ID} from "../utils/secretes";
 const fb = require("../assets/fb.png");
 
 const Login=(props)=>{
@@ -48,7 +49,7 @@ const Login=(props)=>{
                  <img src={fb} width='50px' height='40px' />
                  {/* <button className="button" onClick={login}>Signin with Facebook</button> */}
                  <FacebookLogin
-                    appId="2347564788702295"
+                    appId={FACEBOOK_APP_ID}
                     autoLoad={false}
                     fields="name,email,picture,friends"
                     callback={responseFacebook}

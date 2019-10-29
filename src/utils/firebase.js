@@ -1,14 +1,15 @@
 
 import firebase from "firebase";
+import {FIREBASE_APP_ID,FIREBASE_API_KEY,FIREBASE_AUTHDOMAIN,FIREBASE_DATABASE,FIREBASE_PROJECTID,FIREBASE_STORAGE,FIREBASE_MESSAGING_ID} from "./secretes";
 
 const firebaseConfig= {
-  apiKey: "AIzaSyDqAbfwY9BWdnqE8IU5yWC9R0a2e4oe2lQ",
-  authDomain: "bigshot-40993.firebaseapp.com",
-  databaseURL: "https://bigshot-40993.firebaseio.com",
-  projectId: "bigshot-40993",
-  storageBucket: "bigshot-40993.appspot.com",
-  messagingSenderId: "915182630557",
-  appId: "1:915182630557:web:67572c6200831107d90674"
+  apiKey: FIREBASE_API_KEY,
+  authDomain: FIREBASE_AUTHDOMAIN,
+  databaseURL: FIREBASE_DATABASE,
+  projectId: FIREBASE_PROJECTID,
+  storageBucket: FIREBASE_STORAGE,
+  messagingSenderId: FIREBASE_MESSAGING_ID,
+  appId: FIREBASE_APP_ID
   };
 
  const firebaseApp = firebase.initializeApp(firebaseConfig);
