@@ -2,6 +2,8 @@ import firebaseApp from "../utils/firebase";
 
 var uid='';
 
+var userdata = 
+
 firebaseApp.auth().onAuthStateChanged((user)=>{
     if(user){
         uid = user.user.uid;
@@ -15,6 +17,7 @@ export const getUserInfo=(_CallBack)=>{
           if(snapshot.val() != null){
               var d = Object.values(snapshot.val())
               console.log(d);
+              userdata = d;
               _CallBack(d[0]);
           }
       });
@@ -34,3 +37,5 @@ export const getPoints=(_CallBack)=>{
     })
 }
 
+//export userdata
+export const udata = userdata;
