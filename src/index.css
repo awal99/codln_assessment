@@ -198,8 +198,10 @@ body > #root > div {
   justify-content: center;
   align-items: center;
   background-color:brown;
+  margin-left: 25%;
+  margin-right: 25%;
   height: 100vh !important;
-  padding:30px;
+  padding:10% 30px 30px 30px;
   display: flexbox;
 }
 

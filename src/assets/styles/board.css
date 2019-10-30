@@ -77,7 +77,8 @@
     height: 33.3333333%;
     width: 33.3333333%;
     float: left;
-    border: 1px solid #000;
+    font-family: cursive;
+    border: 3px solid #F7EF99;
     position: relative;
     cursor: pointer;
   }
@@ -100,9 +101,15 @@
   }
   #board [class^=cell-].x:after {
     content: "x";
+    font-family: cursive;
+    color: #F7EF99;
+    font-style: italic;
   }
   #board [class^=cell-].o:after {
     content: "o";
+    font-family: cursive;
+    color: #F7EF99;
+    font-style: italic;
   }
   #board .cell-0, #board .cell-1, #board .cell-2 {
     border-top: none;
